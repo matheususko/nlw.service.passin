@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout
-        users: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Generate sha
         id: generate_sha
