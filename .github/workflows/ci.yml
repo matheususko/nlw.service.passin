@@ -8,14 +8,14 @@ on:
 jobs:
   build-and-push:
     name: 'Build and Push'
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         users: actions/checkout@v4
 
       - name: Generate sha
-        id: genereta_sha
+        id: generate_sha
         run: |
           SHA=$(echo $GITHUB_SHA | head -c7)
           echo "sha=$SHA" >> $GITHUB_OUTPUT
