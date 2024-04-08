@@ -32,3 +32,5 @@ jobs:
       - name: Push image
         run: |
           docker push msusko/nlw.service.passin:${{ steps.generate_sha.outputs.sha }}
+          docker tag msusko/nlw.service.passin:${{ steps.generate_sha.outputs.sha }} msusko/nlw.service.passin:latest
+          docker push msusko/nlw.service.passin:latest
