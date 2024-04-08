@@ -2,7 +2,7 @@ replicaCount: 5
 image:
   repository: msusko/nlw.service.passin
   pullPolicy: Always
-  tag: 59a9745
+  tag: '7488875'
   port: 3333
 imagePullSecrets: []
 nameOverride: ''
